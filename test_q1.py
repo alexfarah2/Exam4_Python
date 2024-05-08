@@ -6,7 +6,7 @@ import pytest
 def test_k_zero():
   s = "ATGTCTGTCTGAA"
   k = 0
-  CORRECT = {}
+  CORRECT = {'': {''}}
   assert get_geno_strings(s, k) == CORRECT 
 
 def test_same_letter():
@@ -21,10 +21,10 @@ def test_k_1():
   s = "ATGTCTGTCTGAA"
   k = 1
   CORRECT = {
-    "A": set()
-    "T": set()
-    "G": set()
-    "C": set()
+    'A': {'A'},
+    'T': {'G', 'A'},
+    'G': {'A'},
+    'C': {'T', 'G', 'A'}
   }
   assert get_geno_strings(s, k) == CORRECT
 
