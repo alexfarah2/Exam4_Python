@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from exam4_q1 import* 
+from exam4_q1 import get_geno_strings 
 import pytest 
 
 def test_k_zero():
