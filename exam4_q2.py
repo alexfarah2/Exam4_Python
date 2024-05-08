@@ -3,14 +3,26 @@
 import sys #This lets us type arguments on the command line and have it be used in the code 
 
 def all_substrings(file, k): #new function using the old function for any file
-  new_substrings={} #makes a dictionary of all the new functions
-  with open(file, 'r') as file: #unsure about this part
-    for line in file:
-      s = line.strip() #takes away any blank spaces or extra characters that aren't the sequence
-      unique_substring = get_geno_string(s, k)
-      new_substrings[s] = unique_substring
+  """
+  This function uses the first function (get_geno_strings) to read sequences from a file to identify all possible substrings and their subsequent substrings for each sequence.
+  
+  Arguments:
+    file (filename/path to filename (string)) : The path to the file to read the sequences from. 
+    k (int): The size of the kmers being analyzed
     
-  return (new_substrings)
+  Returns:
+    new_substrings: The new unique substrings and their subsequent substrings from the file. 
+  """
+  
+  new_substrings={} #makes a dictionary of all the new functions
+  with open(file, 'r') as file: #When the file (argument ) is put in, opened, and read it will loop through every line in the file
+    for line in file: #the looping through every line in the file part. 
+      s = line.strip() #takes away any blank spaces or extra characters that aren't the sequence
+      unique_substring = get_geno_string(s, k) #the previous output from the first function
+      new_substrings[s] = unique_substring #Adding the two together so new substrings has all of the unique substrings as well. 
+    
+  return (new_substrings) #This will give us only the unique kmer substrings and all possible unique subsequent substrings
+
 
 def get_geno_string(s, k): #Defining the function and its set of arguments
   
