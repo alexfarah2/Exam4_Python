@@ -26,6 +26,6 @@ To test the functions, type into the command line:
 pytest 
 
 I provided the sample.txt that I used to test the functions when I was making them. 
-
+I also wrote the answer to question 7 at the end of the q3 code. 
 
 ##Thanks for a great semester!
