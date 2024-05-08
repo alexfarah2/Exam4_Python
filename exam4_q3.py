@@ -77,4 +77,4 @@ if __name__ == "__main__": #The overall command that lets us use the command lin
   smallest_k = find_smallest_k(file) #defines smallest_k
   print (smallest_k) #prints the smallest number for k
 
-
+#The answer to question 7 is k=1 
