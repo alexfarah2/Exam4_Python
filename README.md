@@ -1,6 +1,6 @@
 # Exam4_Python
 
-This projecth shows a few functions that will complete a goal of analyzing a kmer sequence. It will be able to be typed in to the command line and completed from the command line. The goal of this project was to: 
+This project shows a few functions that will complete a goal of analyzing a kmer sequence. It will be able to be typed in to the command line and completed from the command line. The goal of this project was to: 
 (1) Define a function that identifies all substrings of size (k), and all unique possible subsequent substrings of each dubstring.
 (2) Define a function that uses the first function to identify all possible substrings and subsequent substrings for all sequences read from a file.
 (3) Define a function that identifies the smallest k value using the previous functions.
